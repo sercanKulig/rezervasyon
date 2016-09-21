@@ -48,21 +48,4 @@ class DefaultController extends Controller
         $items = $repo->findAll();
         return ['items' => $items];
     }
-
-    /**
-     * @param $id
-     * @Route("/salon/delete/(salon1)", requirement("salon1";"id+"), name=" salon_delete")
-     * @Template
-     */
-    public function deleteAction(Salon1 $salon1){
-        $en = $this->getDoctrine()->getManager();
-        $en->remove($salon1);
-
-        //mesaj gönerme
-        $session = $this->get('session');
-        $flashbag = $session->getFlashBag();
-        $flashbag->add("success","İçerik başarıyla silindi");
-        $session->save();
-        return RedirectResponse::create("/salon/list");
-    }
 }
