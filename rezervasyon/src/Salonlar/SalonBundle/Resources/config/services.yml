@@ -1,0 +1,4 @@
+services:
+#    salon.example:
+#        class: Salonlar\SalonBundle\Example
+#        arguments: ["@service_id", "plain_value", %parameter%]
