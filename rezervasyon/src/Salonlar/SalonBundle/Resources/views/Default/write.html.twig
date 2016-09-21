@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {{ name }} {{ lastname }}
+    <form action="" method="post">
+        <input type="text" name="title" id="title" placeholder="title"><br>
+        <textarea name="content" id="content" cols="38" rows="10" placeholder="content"></textarea><br>
+        <input type="submit" name="Gönder">
+    </form>
+{% endblock %}
