@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a1d7b122-f8d4-4262-a3e0-822680abd2c7" name="Default" comment="commited">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/app/Resources/views/genius/show.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/CustomerRepository.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezervasyon/app/Resources/views/default/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/base.html.twig" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/rezervasyon.iml" afterPath="$PROJECT_DIR$/.idea/rezervasyon.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/customerRepository.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/listing.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/CustomerRepository.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig" afterPath="$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/app/config/routing.yml" afterPath="$PROJECT_DIR$/rezervasyon/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/Salon1.php" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/Salon1.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/Salon1Repository.php" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/Salon1Repository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/write.html.twig" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/write.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig" afterPath="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css" afterPath="$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css" />
     </list>
     <ignored path="rezervasyon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,22 +40,14 @@
       <file leaf-file-name="PersonController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.692308">
-              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+            <state vertical-scroll-proportion="-22.307692">
+              <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
                 <element signature="e#133#174#0#PHP" expanded="true" />
+                <element signature="e#1158#1180#1#PHP" expanded="true" />
+                <element signature="e#3219#3241#1#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="customer.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/customer.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5109321">
-              <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -70,8 +55,8 @@
       <file leaf-file-name="register.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.115385">
-              <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+            <state vertical-scroll-proportion="-13.076923">
+              <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
               <folding>
                 <element signature="e#12#26#0#Twig" expanded="true" />
               </folding>
@@ -79,21 +64,61 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig">
+      <file leaf-file-name="listing.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/listing.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.6153846">
-              <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+            <state vertical-scroll-proportion="-1.3076923">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css">
+      <file leaf-file-name="customerRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/customerRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="-8.5">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Salon1Repository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/Salon1Repository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="customer.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/customer.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.769231">
+              <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.1923075">
+              <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.25431532">
+              <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -125,12 +150,15 @@
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/base.html.twig" />
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/css/css.css" />
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/css/main.css" />
-        <option value="$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css" />
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/write.html.twig" />
         <option value="$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig" />
+        <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/CustomerRepository.php" />
+        <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/customerRepository.php" />
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php" />
-        <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig" />
         <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/customer.php" />
+        <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/listing.html.twig" />
+        <option value="$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig" />
+        <option value="$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css" />
       </list>
     </option>
   </component>
@@ -268,6 +296,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Salonlar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SalonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Salonlar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SalonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Repository" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -299,6 +395,36 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rezervasyon" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Salonlar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SalonBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -374,6 +500,9 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Sercan\Documents\GitHub\rezervasyon\rezervasyon\src\Salonlar\SalonBundle\Repository" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Sercan\Documents\GitHub\rezervasyon\rezervasyon\web\bundles\framework\css" />
       <recent name="C:\Users\Sercan\Documents\GitHub\rezervasyon\rezervasyon\app\Resources\views\default" />
@@ -660,55 +789,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/CustomerRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/Salon1Repository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3521289">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.6153846">
-          <caret line="4" column="28" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/write.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.65384614">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="36" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/DefaultController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.153846">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
-          <folding>
-            <element signature="e#51#90#0#PHP" expanded="true" />
-            <element signature="e#1412#1432#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -721,10 +807,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/DefaultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24741082">
+          <caret line="17" column="48" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+          <folding>
+            <element signature="e#51#90#0#PHP" expanded="true" />
+            <element signature="e#1412#1432#1#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/app/Resources/views/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.1923075">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/Salon1Repository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/customer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.769231">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Repository/customerRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.5">
+          <caret line="13" column="29" selection-start-line="13" selection-start-column="29" selection-end-line="13" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/listing.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3076923">
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Resources/views/Default/register.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.115385">
-          <caret line="17" column="51" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
+        <state vertical-scroll-proportion="-13.076923">
+          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
           <folding>
             <element signature="e#12#26#0#Twig" expanded="true" />
           </folding>
@@ -733,19 +870,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Controller/PersonController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.692308">
-          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+        <state vertical-scroll-proportion="-22.307692">
+          <caret line="78" column="63" selection-start-line="78" selection-start-column="63" selection-end-line="78" selection-end-column="63" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
             <element signature="e#133#174#0#PHP" expanded="true" />
+            <element signature="e#1158#1180#1#PHP" expanded="true" />
+            <element signature="e#3219#3241#1#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rezervasyon/src/Salonlar/SalonBundle/Entity/customer.php">
+    <entry file="file://$PROJECT_DIR$/rezervasyon/web/bundles/framework/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5109321">
-          <caret line="40" column="48" selection-start-line="40" selection-start-column="48" selection-end-line="40" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.25431532">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
           <folding />
         </state>
       </provider>
