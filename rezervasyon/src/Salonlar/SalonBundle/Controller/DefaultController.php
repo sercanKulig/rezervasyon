@@ -19,6 +19,7 @@ class DefaultController extends Controller
      * @return Response
      */
     public function writeAction(Request $request){
+        $request = $this->get('request_stack')->getCurrentRequest();
         if($request->isMethod('post')){
             $title = $request->get('title');
             $content = $request->get('content');
@@ -28,10 +29,9 @@ class DefaultController extends Controller
                 ->setContent($content);
 
             //kaydetme
-            $en = $this->getDoctrine()->getManager();
-
-            $en->persist($salon1);
-            $en->flush();
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($salon1);
+            $em->flush();
             return["message" => "başarılı"];
         }
         return [];

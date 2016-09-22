@@ -1,5 +1,5 @@
 salon:
-    resource: "@SalonBundle/Controller/"
+    resource: "@SalonBundle/Controller"
     type:     annotation
     prefix:   /
 

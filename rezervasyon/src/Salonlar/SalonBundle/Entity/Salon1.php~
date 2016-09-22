@@ -94,3 +94,4 @@ class Salon1
         return $this->content;
     }
 }
+

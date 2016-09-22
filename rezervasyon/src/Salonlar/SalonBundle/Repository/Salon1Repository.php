@@ -1,6 +1,7 @@
 <?php
 
 namespace Salonlar\SalonBundle\Repository;
+use Salonlar\SalonBundle\Entity\Salon1;
 
 /**
  * Salon1Repository
@@ -10,4 +11,11 @@ namespace Salonlar\SalonBundle\Repository;
  */
 class Salon1Repository extends \Doctrine\ORM\EntityRepository
 {
+    public function newSalon1($title="",$content="")
+    {
+        $salon = new Salon1();
+        $salon->setTitle($title)
+            ->setContent($content);
+        return $salon;
+    }
 }
