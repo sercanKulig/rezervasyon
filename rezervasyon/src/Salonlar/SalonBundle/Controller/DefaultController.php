@@ -12,40 +12,39 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DefaultController extends Controller
 {
+
     /**
-     * @Template
-     * @param Request $request
-     * @Route("/salon/write",name="salon_write")
-     * @return Response
+     * @Route("index", name="index_action")
      */
-    public function writeAction(Request $request){
-        $request = $this->get('request_stack')->getCurrentRequest();
-        if($request->isMethod('post')){
-            $title = $request->get('title');
-            $content = $request->get('content');
-
-            $salon1 = new Salon1();
-            $salon1->setTitle($title)
-                ->setContent($content);
-
-            //kaydetme
-            $em = $this->getDoctrine()->getManager();
-            $em->persist($salon1);
-            $em->flush();
-            return["message" => "başarılı"];
-        }
-        return [];
+    public function indexAction(){
+        return $this->render('@Salon/index/index.html.twig');
     }
 
     /**
-     * @return array
-     * @Route("/salon/list",name="salon_list")
-     * @Template
+     * @Route("oyunlar/hayvanciftligi", name="hayvan_ciftligi")
      */
-    public function listAction(){
-        $en = $this->getDoctrine()->getManager();
-        $repo = $en->getRepository("SalonBundle:Salon1");
-        $items = $repo->findAll();
-        return ['items' => $items];
+    public function hayvanciftligiAction(){
+        return $this->render('@Salon/oyunlar/hayvanciftligi.html.twig');
+    }
+
+    /**
+     * @Route("oyunlar/kontrabas", name="kontrabas")
+     */
+    public function kontrabasAction(){
+        return $this->render('@Salon/oyunlar/kontrabas.html.twig');
+    }
+
+    /**
+     * @Route("oyunlar/sontango", name="sontango")
+     */
+    public function sontangoAction(){
+        return $this->render('@Salon/oyunlar/sontango.html.twig');
+    }
+
+    /**
+     * @Route("oyunlar/camasirhane", name="camasirhane")
+     */
+    public function camasirhaneAction(){
+        return $this->render('@Salon/oyunlar/camasirhane.html.twig');
     }
 }

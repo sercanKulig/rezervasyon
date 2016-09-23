@@ -1,0 +1,88 @@
+{% extends 'base.html.twig' %}
+{% block title %}Çankaya Belediye Tiyatrosu{% endblock %}
+{% block header %}
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#"><img src="{{ asset('bundles/framework/images/cankayaLogo.png') }}" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ path('index_action') }}">Tiyatro</a></li>
+                    <li><a href="#">Barınaklar</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Giriş</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block body %}
+    <div class="upper-body">
+        <div class="half-up">
+            <img src="{{ asset('bundles/framework/images/tiyatrolar_Z.png') }}" />
+        </div>
+        <div class="half-down">
+            <h3 style=" position: relative; right: 455px !important;">Tiyatrolar</h3>
+            <hr>
+        </div>
+    </div>
+    <div class="lower-body">
+        <div class="lower-right">
+            <h3>HAYVAN ÇİFTLİĞİ</h3>
+            <table class="table table-hover">
+                <tbody>
+                <tr>
+                    <td>Oynadığı Yer</td>
+                    <td>ŞİNASİ SAHNESİ</td>
+                </tr>
+                <tr>
+                    <td>Gösterim Tarihi</td>
+                    <td>03 Mayıs 2016 Salı - 08 Mayıs 2016 Pazar</td>
+                </tr>
+                <tr>
+                    <td>Yazan</td>
+                    <td>GEORGE ORWELL</td>
+                </tr>
+                <tr>
+                    <td>Yöneten</td>
+                    <td>BARIŞ ERDENK</td>
+                </tr>
+                <tr>
+                    <td>Süre</td>
+                    <td>1 saat 25 dakika</td>
+                </tr>
+                <tr>
+                    <td>Oyuncular</td>
+                    <td>ÖZGÜR ÖZTÜRK DENİZ KEYF GÜLİN ERSOY ŞİVAN BİNİCİ CENGİZ UZUN ULAŞ ERSOY AYŞE BERNA KONUR UFUK ŞENER MUZAFFER SAYGI ENGİN BOSTANCI EMRE GÜVEN NAHİDE AYNI</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="lower-left">
+            <img src="{{ asset('bundles/framework/images/hayvanciftligi-bg.png') }}" /><br>
+            <a href="{{ path('sinasi') }}" class="btn btn-warning" role="button" style="position: relative; top: 8px; width: 200px;">online rezervasyon</a>
+        </div>
+        <div class="lower-bottom">
+            <h3>Kısa Açıklama</h3>
+            Dünyaca ünlü İngiliz yazar George ORWELL’ın çağdaş klasikler arasına girmiş ve bir başyapıt olarak kabul edilen <br>
+            Hayvan Çiftliği adlı romanından uyarlanmış bu oyunda, bir çiftlikte yaşayan hayvanların kendilerini sömüren insanların <br>
+            yönetimini devirmeleri ve eşitlikçi bir düzen kurmaları anlatılır. Ama zamanla hayvanların zeki ve iktidar düşkünü önderleri<br>
+            domuzlar, insanlardan daha baskıcı ve acımasız bir diktatörlük kuracaklardır.
+            <hr>
+        </div>
+    </div>
+{% endblock %}

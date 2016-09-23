@@ -9,6 +9,7 @@
 namespace Salonlar\SalonBundle\Controller;
 
 use Salonlar\SalonBundle\Entity\customer;
+use Salonlar\SalonBundle\Form\customerType;
 use Salonlar\SalonBundle\Repository\CustomerRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
@@ -36,66 +37,24 @@ class PersonController extends Controller
         $repo = $em->getRepository('SalonBundle:customer');
 
         $form = $repo->newPerson();
-
-        $formBuild = $this->createFormBuilder($form)
-            ->setMethod('POST')
-            ->setAction('listing')
-            ->add('name',TextType::class,[
-                'label' =>' ',
-                'attr'=>[
-                    'class' => 'form-control',
-                    'type'=>'text',
-                    'placeholder' =>'İsim ve Soyad',
-                    'required' => 'required',
-                ]
-            ])
-            ->add('email',TextType::class,[
-                'label' =>' ',
-                'attr'=>[
-                    'class' => 'form-control',
-                    'type'=>'email',
-                    'placeholder' =>'Email',
-                    'required' => 'required',
-                ]
-            ])
-            ->add('phone',TextType::class,[
-                'label' =>' ',
-                'attr'=>[
-                    'class' => 'form-control',
-                    'type'=>'number',
-                    'placeholder' =>'Telefon',
-                    'required' => 'required',
-                ]
-            ])->add('submit',SubmitType::class,[
-                'label' => 'gönder',
-                'attr'=>[
-                'class' => 'btn btn-default'
-            ]
-            ])
-            ->getForm();
-        ;
-
+        $formBuild = $this->createForm('Salonlar\SalonBundle\Form\customerType', $form);
         $formBuild->handleRequest($request);
         if($formBuild->isSubmitted() && $formBuild->isValid()){
-            $name = $request->get('name');
-            $email = $request->get('email');
-            $phone = $request->get('phone');
-
-            $customer = new customer();
-            $customer->setName($name)
-                ->setEmail($email)
-                ->setPhone($phone);
-
             //kaydetme
-            $em->persist($customer);
+            $em->persist($form);
             $em->flush();
-            return["message" => "başarılı"];
+            $this->addFlash('success','İşlem başarıyla gerçekleştirildi');
         }
         return [
             'form' => $formBuild->createView()
         ];
     }
 
+    /**
+     * @return array
+     * @Template ("SalonBundle:Default:listing.html.twig")
+     * @Route("/customer/listing",name="customer_listing")
+     */
     public function showAction(){
         $em = $this->getDoctrine()->getManager();
         $repo = $em->getRepository("SalonBundle:customer");
