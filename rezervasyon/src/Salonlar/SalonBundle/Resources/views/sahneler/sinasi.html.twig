@@ -1,0 +1,870 @@
+{% extends 'base.html.twig' %}
+{% block title %}Çankaya Belediye Tiyatrosu{% endblock %}
+{% block header %}
+    <nav class="navbar navbar-default">
+
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#"><img src="{{ asset('bundles/framework/images/cankayaLogo.png') }}" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ path('index_action') }}">Tiyatro</a></li>
+                    <li><a href="#">Barınaklar</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Giriş</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+{% endblock %}
+{% block body %}
+    <div class="container">
+        <form action="" method="POST">
+            <table class="table-borderless">
+                <div class="sahne"></div>
+                <tbody>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='A1' value='1' id="A1"/><label for="A1"></label></td>
+                    <td><input type='checkbox' name='A2' value='1' id="A2"/><label for="A2"></label></td>
+                    <td><input type='checkbox' name='A3' value='1' id="A3"/><label for="A3"></label></td>
+                    <td><input type='checkbox' name='A4' value='1' id="A4"/><label for="A4"></label></td>
+                    <td><input type='checkbox' name='A5' value='1' id="A5"/><label for="A5"></label></td>
+                    <td><input type='checkbox' name='A6' value='1' id="A6"/><label for="A6"></label></td>
+                    <td><input type='checkbox' name='A7' value='1' id="A7"/><label for="A7"></label></td>
+                    <td><input type='checkbox' name='A8' value='1' id="A8"/><label for="A8"></label></td>
+                    <td><input type='checkbox' name='A9' value='1' id="A9"/><label for="A9"></label></td>
+                    <td><input type='checkbox' name='A10' value='1' id="A10"/><label for="A10"></label></td>
+                    <td><input type='checkbox' name='A11' value='1' id="A11"/><label for="A11"></label></td>
+                    <td><input type='checkbox' name='A12' value='1' id="A12"/><label for="A12"></label></td>
+                    <td><input type='checkbox' name='A13' value='1' id="A13"/><label for="A13"></label></td>
+                    <td><input type='checkbox' name='A14' value='1' id="A14"/><label for="A14"></label></td>
+                    <td><input type='checkbox' name='A15' value='1' id="A15"/><label for="A15"></label></td>
+                    <td><input type='checkbox' name='A16' value='1' id="A16"/><label for="A16"></label></td>
+                    <td><input type='checkbox' name='A17' value='1' id="A17"/><label for="A17"></label></td>
+                    <td><input type='checkbox' name='A18' value='1' id="A18"/><label for="A18"></label></td>
+                    <td><input type='checkbox' name='A19' value='1' id="A19"/><label for="A19"></label></td>
+                    <td><input type='checkbox' name='A20' value='1' id="A20"/><label for="A20"></label></td>
+                    <td><input type='checkbox' name='A21' value='1' id="A21"/><label for="A21"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='B1' value='1' id="B1"/><label for="B1"></label></td>
+                    <td><input type='checkbox' name='B2' value='1' id="B2"/><label for="B2"></label></td>
+                    <td><input type='checkbox' name='B3' value='1' id="B3"/><label for="B3"></label></td>
+                    <td><input type='checkbox' name='B4' value='1' id="B4"/><label for="B4"></label></td>
+                    <td><input type='checkbox' name='B5' value='1' id="B5"/><label for="B5"></label></td>
+                    <td><input type='checkbox' name='B6' value='1' id="B6"/><label for="B6"></label></td>
+                    <td><input type='checkbox' name='B7' value='1' id="B7"/><label for="B7"></label></td>
+                    <td><input type='checkbox' name='B8' value='1' id="B8"/><label for="B8"></label></td>
+                    <td><input type='checkbox' name='B9' value='1' id="B9"/><label for="B9"></label></td>
+                    <td><input type='checkbox' name='B10' value='1' id="B10"/><label for="B10"></label></td>
+                    <td><input type='checkbox' name='B11' value='1' id="B11"/><label for="B11"></label></td>
+                    <td><input type='checkbox' name='B12' value='1' id="B12"/><label for="B12"></label></td>
+                    <td><input type='checkbox' name='B13' value='1' id="B13"/><label for="B13"></label></td>
+                    <td><input type='checkbox' name='B14' value='1' id="B14"/><label for="B14"></label></td>
+                    <td><input type='checkbox' name='B15' value='1' id="B15"/><label for="B15"></label></td>
+                    <td><input type='checkbox' name='B16' value='1' id="B16"/><label for="B16"></label></td>
+                    <td><input type='checkbox' name='B17' value='1' id="B17"/><label for="B17"></label></td>
+                    <td><input type='checkbox' name='B18' value='1' id="B18"/><label for="B18"></label></td>
+                    <td><input type='checkbox' name='B19' value='1' id="B19"/><label for="B19"></label></td>
+                    <td><input type='checkbox' name='B20' value='1' id="B20"/><label for="B20"></label></td>
+                    <td><input type='checkbox' name='B21' value='1' id="B21"/><label for="B21"></label></td>
+                    <td><input type='checkbox' name='B22' value='1' id="B22"/><label for="B22"></label></td>
+                    <td><input type='checkbox' name='B23' value='1' id="B23"/><label for="B23"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='C1' value='1' id="C1"/><label for="C1"></label></td>
+                    <td><input type='checkbox' name='C2' value='1' id="C2"/><label for="C2"></label></td>
+                    <td><input type='checkbox' name='C3' value='1' id="C3"/><label for="C3"></label></td>
+                    <td><input type='checkbox' name='C4' value='1' id="C4"/><label for="C4"></label></td>
+                    <td><input type='checkbox' name='C5' value='1' id="C5"/><label for="C5"></label></td>
+                    <td><input type='checkbox' name='C6' value='1' id="C6"/><label for="C6"></label></td>
+                    <td><input type='checkbox' name='C7' value='1' id="C7"/><label for="C7"></label></td>
+                    <td><input type='checkbox' name='C8' value='1' id="C8"/><label for="C8"></label></td>
+                    <td><input type='checkbox' name='C9' value='1' id="C9"/><label for="C9"></label></td>
+                    <td><input type='checkbox' name='C10' value='1' id="C10"/><label for="C10"></label></td>
+                    <td><input type='checkbox' name='C11' value='1' id="C11"/><label for="C11"></label></td>
+                    <td><input type='checkbox' name='C12' value='1' id="C12"/><label for="C12"></label></td>
+                    <td><input type='checkbox' name='C13' value='1' id="C13"/><label for="C13"></label></td>
+                    <td><input type='checkbox' name='C14' value='1' id="C14"/><label for="C14"></label></td>
+                    <td><input type='checkbox' name='C15' value='1' id="C15"/><label for="C15"></label></td>
+                    <td><input type='checkbox' name='C16' value='1' id="C16"/><label for="C16"></label></td>
+                    <td><input type='checkbox' name='C17' value='1' id="C17"/><label for="C17"></label></td>
+                    <td><input type='checkbox' name='C18' value='1' id="C18"/><label for="C18"></label></td>
+                    <td><input type='checkbox' name='C19' value='1' id="C19"/><label for="C19"></label></td>
+                    <td><input type='checkbox' name='C20' value='1' id="C20"/><label for="C20"></label></td>
+                    <td><input type='checkbox' name='C21' value='1' id="C21"/><label for="C21"></label></td>
+                    <td><input type='checkbox' name='C22' value='1' id="C22"/><label for="C22"></label></td>
+                    <td><input type='checkbox' name='C23' value='1' id="C23"/><label for="C23"></label></td>
+                    <td><input type='checkbox' name='C24' value='1' id="C24"/><label for="C24"></label></td>
+                    <td><input type='checkbox' name='C25' value='1' id="C25"/><label for="C25"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='D1' value='1' id="D1"/><label for="D1"></label></td>
+                    <td><input type='checkbox' name='D2' value='1' id="D2"/><label for="D2"></label></td>
+                    <td><input type='checkbox' name='D3' value='1' id="D3"/><label for="D3"></label></td>
+                    <td><input type='checkbox' name='D4' value='1' id="D4"/><label for="D4"></label></td>
+                    <td><input type='checkbox' name='D5' value='1' id="D5"/><label for="D5"></label></td>
+                    <td><input type='checkbox' name='D6' value='1' id="D6"/><label for="D6"></label></td>
+                    <td><input type='checkbox' name='D7' value='1' id="D7"/><label for="D7"></label></td>
+                    <td><input type='checkbox' name='D8' value='1' id="D8"/><label for="D8"></label></td>
+                    <td><input type='checkbox' name='D9' value='1' id="D9"/><label for="D9"></label></td>
+                    <td><input type='checkbox' name='D10' value='1' id="D10"/><label for="D10"></label></td>
+                    <td><input type='checkbox' name='D11' value='1' id="D11"/><label for="D11"></label></td>
+                    <td><input type='checkbox' name='D12' value='1' id="D12"/><label for="D12"></label></td>
+                    <td><input type='checkbox' name='D13' value='1' id="D13"/><label for="D13"></label></td>
+                    <td><input type='checkbox' name='D14' value='1' id="D14"/><label for="D14"></label></td>
+                    <td><input type='checkbox' name='D15' value='1' id="D15"/><label for="D15"></label></td>
+                    <td><input type='checkbox' name='D16' value='1' id="D16"/><label for="D16"></label></td>
+                    <td><input type='checkbox' name='D17' value='1' id="D17"/><label for="D17"></label></td>
+                    <td><input type='checkbox' name='D18' value='1' id="D18"/><label for="D18"></label></td>
+                    <td><input type='checkbox' name='D19' value='1' id="D19"/><label for="D19"></label></td>
+                    <td><input type='checkbox' name='D20' value='1' id="D20"/><label for="D20"></label></td>
+                    <td><input type='checkbox' name='D21' value='1' id="D21"/><label for="D21"></label></td>
+                    <td><input type='checkbox' name='D22' value='1' id="D22"/><label for="D22"></label></td>
+                    <td><input type='checkbox' name='D23' value='1' id="D23"/><label for="D23"></label></td>
+                    <td><input type='checkbox' name='D24' value='1' id="D24"/><label for="D24"></label></td>
+                    <td><input type='checkbox' name='D25' value='1' id="D25"/><label for="D25"></label></td>
+                    <td><input type='checkbox' name='D26' value='1' id="D26"/><label for="D26"></label></td>
+                    <td><input type='checkbox' name='D27' value='1' id="D27"/><label for="D27"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='E1' value='1' id="E1"/><label for="E1"></label></td>
+                    <td><input type='checkbox' name='E2' value='1' id="E2"/><label for="E2"></label></td>
+                    <td><input type='checkbox' name='E3' value='1' id="E3"/><label for="E3"></label></td>
+                    <td><input type='checkbox' name='E4' value='1' id="E4"/><label for="E4"></label></td>
+                    <td><input type='checkbox' name='E5' value='1' id="C5"/><label for="E5"></label></td>
+                    <td><input type='checkbox' name='E6' value='1' id="E6"/><label for="E6"></label></td>
+                    <td><input type='checkbox' name='E7' value='1' id="E7"/><label for="E7"></label></td>
+                    <td><input type='checkbox' name='E8' value='1' id="E8"/><label for="E8"></label></td>
+                    <td><input type='checkbox' name='E9' value='1' id="E9"/><label for="E9"></label></td>
+                    <td><input type='checkbox' name='E10' value='1' id="E10"/><label for="E10"></label></td>
+                    <td><input type='checkbox' name='E11' value='1' id="E11"/><label for="E11"></label></td>
+                    <td><input type='checkbox' name='E12' value='1' id="E12"/><label for="E12"></label></td>
+                    <td><input type='checkbox' name='E13' value='1' id="E13"/><label for="E13"></label></td>
+                    <td><input type='checkbox' name='E14' value='1' id="E14"/><label for="E14"></label></td>
+                    <td><input type='checkbox' name='E15' value='1' id="E15"/><label for="E15"></label></td>
+                    <td><input type='checkbox' name='E16' value='1' id="E16"/><label for="E16"></label></td>
+                    <td><input type='checkbox' name='E17' value='1' id="E17"/><label for="E17"></label></td>
+                    <td><input type='checkbox' name='E18' value='1' id="E18"/><label for="E18"></label></td>
+                    <td><input type='checkbox' name='E19' value='1' id="E19"/><label for="E19"></label></td>
+                    <td><input type='checkbox' name='E20' value='1' id="E20"/><label for="E20"></label></td>
+                    <td><input type='checkbox' name='E21' value='1' id="E21"/><label for="E21"></label></td>
+                    <td><input type='checkbox' name='E22' value='1' id="E22"/><label for="E22"></label></td>
+                    <td><input type='checkbox' name='E23' value='1' id="E23"/><label for="E23"></label></td>
+                    <td><input type='checkbox' name='E24' value='1' id="E24"/><label for="E24"></label></td>
+                    <td><input type='checkbox' name='E25' value='1' id="E25"/><label for="E25"></label></td>
+                    <td><input type='checkbox' name='E26' value='1' id="E26"/><label for="E26"></label></td>
+                    <td><input type='checkbox' name='E27' value='1' id="E27"/><label for="E27"></label></td>
+                    <td><input type='checkbox' name='E28' value='1' id="E28"/><label for="E28"></label></td>
+                    <td><input type='checkbox' name='E29' value='1' id="E29"/><label for="E29"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='F1' value='1' id="F1"/><label for="F1"></label></td>
+                    <td><input type='checkbox' name='F2' value='1' id="F2"/><label for="F2"></label></td>
+                    <td><input type='checkbox' name='F3' value='1' id="F3"/><label for="F3"></label></td>
+                    <td><input type='checkbox' name='F4' value='1' id="F4"/><label for="F4"></label></td>
+                    <td><input type='checkbox' name='F5' value='1' id="F5"/><label for="F5"></label></td>
+                    <td><input type='checkbox' name='F6' value='1' id="F6"/><label for="F6"></label></td>
+                    <td><input type='checkbox' name='F7' value='1' id="F7"/><label for="F7"></label></td>
+                    <td><input type='checkbox' name='F8' value='1' id="F8"/><label for="F8"></label></td>
+                    <td><input type='checkbox' name='F9' value='1' id="F9"/><label for="F9"></label></td>
+                    <td><input type='checkbox' name='F10' value='1' id="F10"/><label for="F10"></label></td>
+                    <td><input type='checkbox' name='F11' value='1' id="F11"/><label for="F11"></label></td>
+                    <td><input type='checkbox' name='F12' value='1' id="F12"/><label for="F12"></label></td>
+                    <td><input type='checkbox' name='F13' value='1' id="F13"/><label for="F13"></label></td>
+                    <td><input type='checkbox' name='F14' value='1' id="F14"/><label for="F14"></label></td>
+                    <td><input type='checkbox' name='F15' value='1' id="F15"/><label for="F15"></label></td>
+                    <td><input type='checkbox' name='F16' value='1' id="F16"/><label for="F16"></label></td>
+                    <td><input type='checkbox' name='F17' value='1' id="F17"/><label for="F17"></label></td>
+                    <td><input type='checkbox' name='F18' value='1' id="F18"/><label for="F18"></label></td>
+                    <td><input type='checkbox' name='F19' value='1' id="F19"/><label for="F19"></label></td>
+                    <td><input type='checkbox' name='F20' value='1' id="F20"/><label for="F20"></label></td>
+                    <td><input type='checkbox' name='F21' value='1' id="F21"/><label for="F21"></label></td>
+                    <td><input type='checkbox' name='F22' value='1' id="F22"/><label for="F22"></label></td>
+                    <td><input type='checkbox' name='F23' value='1' id="F23"/><label for="F23"></label></td>
+                    <td><input type='checkbox' name='F24' value='1' id="F24"/><label for="F24"></label></td>
+                    <td><input type='checkbox' name='F25' value='1' id="F25"/><label for="F25"></label></td>
+                    <td><input type='checkbox' name='F26' value='1' id="F26"/><label for="F26"></label></td>
+                    <td><input type='checkbox' name='F27' value='1' id="F27"/><label for="F27"></label></td>
+                    <td><input type='checkbox' name='F28' value='1' id="F28"/><label for="F28"></label></td>
+                    <td><input type='checkbox' name='F29' value='1' id="F29"/><label for="F29"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='G1' value='1' id="G1"/><label for="G1"></label></td>
+                    <td><input type='checkbox' name='G2' value='1' id="G2"/><label for="G2"></label></td>
+                    <td><input type='checkbox' name='G3' value='1' id="G3"/><label for="G3"></label></td>
+                    <td><input type='checkbox' name='G4' value='1' id="G4"/><label for="G4"></label></td>
+                    <td><input type='checkbox' name='G5' value='1' id="G5"/><label for="G5"></label></td>
+                    <td><input type='checkbox' name='G6' value='1' id="G6"/><label for="G6"></label></td>
+                    <td><input type='checkbox' name='G7' value='1' id="G7"/><label for="G7"></label></td>
+                    <td><input type='checkbox' name='G8' value='1' id="G8"/><label for="G8"></label></td>
+                    <td><input type='checkbox' name='G9' value='1' id="G9"/><label for="G9"></label></td>
+                    <td><input type='checkbox' name='G10' value='1' id="G10"/><label for="G10"></label></td>
+                    <td><input type='checkbox' name='G11' value='1' id="G11"/><label for="G11"></label></td>
+                    <td><input type='checkbox' name='G12' value='1' id="G12"/><label for="G12"></label></td>
+                    <td><input type='checkbox' name='G13' value='1' id="G13"/><label for="G13"></label></td>
+                    <td><input type='checkbox' name='G14' value='1' id="G14"/><label for="G14"></label></td>
+                    <td><input type='checkbox' name='G15' value='1' id="G15"/><label for="G15"></label></td>
+                    <td><input type='checkbox' name='G16' value='1' id="G16"/><label for="G16"></label></td>
+                    <td><input type='checkbox' name='G17' value='1' id="G17"/><label for="G17"></label></td>
+                    <td><input type='checkbox' name='G18' value='1' id="G18"/><label for="G18"></label></td>
+                    <td><input type='checkbox' name='G19' value='1' id="G19"/><label for="G19"></label></td>
+                    <td><input type='checkbox' name='G20' value='1' id="G20"/><label for="G20"></label></td>
+                    <td><input type='checkbox' name='G21' value='1' id="G21"/><label for="G21"></label></td>
+                    <td><input type='checkbox' name='G22' value='1' id="G22"/><label for="G22"></label></td>
+                    <td><input type='checkbox' name='G23' value='1' id="G23"/><label for="G23"></label></td>
+                    <td><input type='checkbox' name='G24' value='1' id="G24"/><label for="G24"></label></td>
+                    <td><input type='checkbox' name='G25' value='1' id="G25"/><label for="G25"></label></td>
+                    <td><input type='checkbox' name='G26' value='1' id="G26"/><label for="G26"></label></td>
+                    <td><input type='checkbox' name='G27' value='1' id="G27"/><label for="G27"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='H1' value='1' id="H1"/><label for="H1"></label></td>
+                    <td><input type='checkbox' name='H2' value='1' id="H2"/><label for="H2"></label></td>
+                    <td><input type='checkbox' name='H3' value='1' id="H3"/><label for="H3"></label></td>
+                    <td><input type='checkbox' name='H4' value='1' id="H4"/><label for="H4"></label></td>
+                    <td><input type='checkbox' name='H5' value='1' id="H5"/><label for="H5"></label></td>
+                    <td><input type='checkbox' name='H6' value='1' id="H6"/><label for="H6"></label></td>
+                    <td><input type='checkbox' name='H7' value='1' id="H7"/><label for="H7"></label></td>
+                    <td><input type='checkbox' name='H8' value='1' id="H8"/><label for="H8"></label></td>
+                    <td><input type='checkbox' name='H9' value='1' id="H9"/><label for="H9"></label></td>
+                    <td><input type='checkbox' name='H10' value='1' id="H10"/><label for="H10"></label></td>
+                    <td><input type='checkbox' name='H11' value='1' id="H11"/><label for="H11"></label></td>
+                    <td><input type='checkbox' name='H12' value='1' id="H12"/><label for="H12"></label></td>
+                    <td><input type='checkbox' name='H13' value='1' id="H13"/><label for="H13"></label></td>
+                    <td><input type='checkbox' name='H14' value='1' id="H14"/><label for="H14"></label></td>
+                    <td><input type='checkbox' name='H15' value='1' id="H15"/><label for="H15"></label></td>
+                    <td><input type='checkbox' name='H16' value='1' id="H16"/><label for="H16"></label></td>
+                    <td><input type='checkbox' name='H17' value='1' id="H17"/><label for="H17"></label></td>
+                    <td><input type='checkbox' name='H18' value='1' id="H18"/><label for="H18"></label></td>
+                    <td><input type='checkbox' name='H19' value='1' id="H19"/><label for="H19"></label></td>
+                    <td><input type='checkbox' name='H20' value='1' id="H20"/><label for="H20"></label></td>
+                    <td><input type='checkbox' name='H21' value='1' id="H21"/><label for="H21"></label></td>
+                    <td><input type='checkbox' name='H22' value='1' id="H22"/><label for="H22"></label></td>
+                    <td><input type='checkbox' name='H23' value='1' id="H23"/><label for="H23"></label></td>
+                    <td><input type='checkbox' name='H24' value='1' id="H24"/><label for="H24"></label></td>
+                    <td><input type='checkbox' name='H25' value='1' id="H25"/><label for="H25"></label></td>
+                    <td><input type='checkbox' name='H26' value='1' id="H26"/><label for="H26"></label></td>
+                    <td><input type='checkbox' name='H27' value='1' id="H27"/><label for="H27"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <TR>
+                    <td><br></td>
+                </TR>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='I1' value='1' id="I1"/><label for="I1"></label></td>
+                    <td><input type='checkbox' name='I2' value='1' id="I2"/><label for="I2"></label></td>
+                    <td><input type='checkbox' name='I3' value='1' id="I3"/><label for="I3"></label></td>
+                    <td><input type='checkbox' name='I4' value='1' id="I4"/><label for="I4"></label></td>
+                    <td><input type='checkbox' name='I5' value='1' id="I5"/><label for="I5"></label></td>
+                    <td><input type='checkbox' name='I6' value='1' id="I6"/><label for="I6"></label></td>
+                    <td><input type='checkbox' name='I7' value='1' id="I7"/><label for="I7"></label></td>
+                    <td><input type='checkbox' name='I8' value='1' id="I8"/><label for="I8"></label></td>
+                    <td><input type='checkbox' name='I9' value='1' id="I9"/><label for="I9"></label></td>
+                    <td><input type='checkbox' name='I10' value='1' id="I10"/><label for="I10"></label></td>
+                    <td><input type='checkbox' name='I11' value='1' id="I11"/><label for="I11"></label></td>
+                    <td><input type='checkbox' name='I12' value='1' id="I12"/><label for="I12"></label></td>
+                    <td><input type='checkbox' name='I13' value='1' id="I13"/><label for="I13"></label></td>
+                    <td><input type='checkbox' name='I14' value='1' id="I14"/><label for="I14"></label></td>
+                    <td><input type='checkbox' name='I15' value='1' id="I15"/><label for="I15"></label></td>
+                    <td><input type='checkbox' name='I16' value='1' id="I16"/><label for="I16"></label></td>
+                    <td><input type='checkbox' name='I17' value='1' id="I17"/><label for="I17"></label></td>
+                    <td><input type='checkbox' name='I18' value='1' id="I18"/><label for="I18"></label></td>
+                    <td><input type='checkbox' name='I19' value='1' id="I19"/><label for="I19"></label></td>
+                    <td><input type='checkbox' name='I20' value='1' id="I20"/><label for="I20"></label></td>
+                    <td><input type='checkbox' name='I21' value='1' id="I21"/><label for="I21"></label></td>
+                    <td><input type='checkbox' name='I22' value='1' id="I22"/><label for="I22"></label></td>
+                    <td><input type='checkbox' name='I23' value='1' id="I23"/><label for="I23"></label></td>
+                    <td><input type='checkbox' name='I24' value='1' id="I24"/><label for="I24"></label></td>
+                    <td><input type='checkbox' name='I25' value='1' id="I25"/><label for="I25"></label></td>
+                    <td><input type='checkbox' name='I26' value='1' id="I26"/><label for="I26"></label></td>
+                    <td><input type='checkbox' name='I27' value='1' id="I27"/><label for="I27"></label></td>
+                    <td><input type='checkbox' name='I28' value='1' id="I28"/><label for="I28"></label></td>
+                    <td><input type='checkbox' name='I29' value='1' id="I29"/><label for="I29"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='J1' value='1' id="J1"/><label for="J1"></label></td>
+                    <td><input type='checkbox' name='J2' value='1' id="J2"/><label for="J2"></label></td>
+                    <td><input type='checkbox' name='J3' value='1' id="J3"/><label for="J3"></label></td>
+                    <td><input type='checkbox' name='J4' value='1' id="J4"/><label for="J4"></label></td>
+                    <td><input type='checkbox' name='J5' value='1' id="J5"/><label for="J5"></label></td>
+                    <td><input type='checkbox' name='J6' value='1' id="J6"/><label for="J6"></label></td>
+                    <td><input type='checkbox' name='J7' value='1' id="J7"/><label for="J7"></label></td>
+                    <td><input type='checkbox' name='J8' value='1' id="J8"/><label for="J8"></label></td>
+                    <td><input type='checkbox' name='J9' value='1' id="J9"/><label for="J9"></label></td>
+                    <td><input type='checkbox' name='J10' value='1' id="J10"/><label for="J10"></label></td>
+                    <td><input type='checkbox' name='J11' value='1' id="J11"/><label for="J11"></label></td>
+                    <td><input type='checkbox' name='J12' value='1' id="J12"/><label for="J12"></label></td>
+                    <td><input type='checkbox' name='J13' value='1' id="J13"/><label for="J13"></label></td>
+                    <td><input type='checkbox' name='J14' value='1' id="J14"/><label for="J14"></label></td>
+                    <td><input type='checkbox' name='J15' value='1' id="J15"/><label for="J15"></label></td>
+                    <td><input type='checkbox' name='J16' value='1' id="J16"/><label for="J16"></label></td>
+                    <td><input type='checkbox' name='J17' value='1' id="J17"/><label for="J17"></label></td>
+                    <td><input type='checkbox' name='J18' value='1' id="J18"/><label for="J18"></label></td>
+                    <td><input type='checkbox' name='J19' value='1' id="J19"/><label for="J19"></label></td>
+                    <td><input type='checkbox' name='J20' value='1' id="J20"/><label for="J20"></label></td>
+                    <td><input type='checkbox' name='J21' value='1' id="J21"/><label for="J21"></label></td>
+                    <td><input type='checkbox' name='J22' value='1' id="J22"/><label for="J22"></label></td>
+                    <td><input type='checkbox' name='J23' value='1' id="J23"/><label for="J23"></label></td>
+                    <td><input type='checkbox' name='J24' value='1' id="J24"/><label for="J24"></label></td>
+                    <td><input type='checkbox' name='J25' value='1' id="J25"/><label for="J25"></label></td>
+                    <td><input type='checkbox' name='J26' value='1' id="J26"/><label for="J26"></label></td>
+                    <td><input type='checkbox' name='J27' value='1' id="J27"/><label for="J27"></label></td>
+                    <td><input type='checkbox' name='J28' value='1' id="J28"/><label for="J28"></label></td>
+                    <td><input type='checkbox' name='J29' value='1' id="J29"/><label for="J29"></label></td>
+                    <td><input type='checkbox' name='J30' value='1' id="J30"/><label for="J30"></label></td>
+                    <td><input type='checkbox' name='J31' value='1' id="J31"/><label for="J31"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='K1' value='1' id="K1"/><label for="K1"></label></td>
+                    <td><input type='checkbox' name='K2' value='1' id="K2"/><label for="K2"></label></td>
+                    <td><input type='checkbox' name='K3' value='1' id="K3"/><label for="K3"></label></td>
+                    <td><input type='checkbox' name='K4' value='1' id="K4"/><label for="K4"></label></td>
+                    <td><input type='checkbox' name='K5' value='1' id="K5"/><label for="K5"></label></td>
+                    <td><input type='checkbox' name='K6' value='1' id="K6"/><label for="K6"></label></td>
+                    <td><input type='checkbox' name='K7' value='1' id="K7"/><label for="K7"></label></td>
+                    <td><input type='checkbox' name='K8' value='1' id="K8"/><label for="K8"></label></td>
+                    <td><input type='checkbox' name='K9' value='1' id="K9"/><label for="K9"></label></td>
+                    <td><input type='checkbox' name='K10' value='1' id="K10"/><label for="K10"></label></td>
+                    <td><input type='checkbox' name='K11' value='1' id="K11"/><label for="K11"></label></td>
+                    <td><input type='checkbox' name='K12' value='1' id="K12"/><label for="K12"></label></td>
+                    <td><input type='checkbox' name='K13' value='1' id="K13"/><label for="K13"></label></td>
+                    <td><input type='checkbox' name='K14' value='1' id="K14"/><label for="K14"></label></td>
+                    <td><input type='checkbox' name='K15' value='1' id="K15"/><label for="K15"></label></td>
+                    <td><input type='checkbox' name='K16' value='1' id="K16"/><label for="K16"></label></td>
+                    <td><input type='checkbox' name='K17' value='1' id="K17"/><label for="K17"></label></td>
+                    <td><input type='checkbox' name='K18' value='1' id="K18"/><label for="K18"></label></td>
+                    <td><input type='checkbox' name='K19' value='1' id="K19"/><label for="K19"></label></td>
+                    <td><input type='checkbox' name='K20' value='1' id="K20"/><label for="K20"></label></td>
+                    <td><input type='checkbox' name='K21' value='1' id="K21"/><label for="K21"></label></td>
+                    <td><input type='checkbox' name='K22' value='1' id="K22"/><label for="K22"></label></td>
+                    <td><input type='checkbox' name='K23' value='1' id="K23"/><label for="K23"></label></td>
+                    <td><input type='checkbox' name='K24' value='1' id="K24"/><label for="K24"></label></td>
+                    <td><input type='checkbox' name='K25' value='1' id="K25"/><label for="K25"></label></td>
+                    <td><input type='checkbox' name='K26' value='1' id="K26"/><label for="K26"></label></td>
+                    <td><input type='checkbox' name='K27' value='1' id="K27"/><label for="K27"></label></td>
+                    <td><input type='checkbox' name='K28' value='1' id="K28"/><label for="K28"></label></td>
+                    <td><input type='checkbox' name='K29' value='1' id="K29"/><label for="K29"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='L1' value='1' id="L1"/><label for="L1"></label></td>
+                    <td><input type='checkbox' name='L2' value='1' id="L2"/><label for="L2"></label></td>
+                    <td><input type='checkbox' name='L3' value='1' id="L3"/><label for="L3"></label></td>
+                    <td><input type='checkbox' name='L4' value='1' id="L4"/><label for="L4"></label></td>
+                    <td><input type='checkbox' name='L5' value='1' id="L5"/><label for="L5"></label></td>
+                    <td><input type='checkbox' name='L6' value='1' id="L6"/><label for="L6"></label></td>
+                    <td><input type='checkbox' name='L7' value='1' id="L7"/><label for="L7"></label></td>
+                    <td><input type='checkbox' name='L8' value='1' id="L8"/><label for="L8"></label></td>
+                    <td><input type='checkbox' name='L9' value='1' id="L9"/><label for="L9"></label></td>
+                    <td><input type='checkbox' name='L10' value='1' id="L10"/><label for="L10"></label></td>
+                    <td><input type='checkbox' name='L11' value='1' id="L11"/><label for="L11"></label></td>
+                    <td><input type='checkbox' name='L12' value='1' id="L12"/><label for="L12"></label></td>
+                    <td><input type='checkbox' name='L13' value='1' id="L13"/><label for="L13"></label></td>
+                    <td><input type='checkbox' name='L14' value='1' id="L14"/><label for="L14"></label></td>
+                    <td><input type='checkbox' name='L15' value='1' id="L15"/><label for="L15"></label></td>
+                    <td><input type='checkbox' name='L16' value='1' id="L16"/><label for="L16"></label></td>
+                    <td><input type='checkbox' name='L17' value='1' id="L17"/><label for="L17"></label></td>
+                    <td><input type='checkbox' name='L18' value='1' id="L18"/><label for="L18"></label></td>
+                    <td><input type='checkbox' name='L19' value='1' id="L19"/><label for="L19"></label></td>
+                    <td><input type='checkbox' name='L20' value='1' id="L20"/><label for="L20"></label></td>
+                    <td><input type='checkbox' name='L21' value='1' id="L21"/><label for="L21"></label></td>
+                    <td><input type='checkbox' name='L22' value='1' id="L22"/><label for="L22"></label></td>
+                    <td><input type='checkbox' name='L23' value='1' id="L23"/><label for="L23"></label></td>
+                    <td><input type='checkbox' name='L24' value='1' id="L24"/><label for="L24"></label></td>
+                    <td><input type='checkbox' name='L25' value='1' id="L25"/><label for="L25"></label></td>
+                    <td><input type='checkbox' name='L26' value='1' id="L26"/><label for="L26"></label></td>
+                    <td><input type='checkbox' name='L27' value='1' id="L27"/><label for="L27"></label></td>
+                    <td><input type='checkbox' name='L28' value='1' id="L28"/><label for="L28"></label></td>
+                    <td><input type='checkbox' name='L29' value='1' id="L29"/><label for="L29"></label></td>
+                    <td><input type='checkbox' name='L30' value='1' id="L30"/><label for="L30"></label></td>
+                    <td><input type='checkbox' name='L31' value='1' id="L31"/><label for="L31"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='M1' value='1' id="M1"/><label for="M1"></label></td>
+                    <td><input type='checkbox' name='M2' value='1' id="M2"/><label for="M2"></label></td>
+                    <td><input type='checkbox' name='M3' value='1' id="M3"/><label for="M3"></label></td>
+                    <td><input type='checkbox' name='M4' value='1' id="M4"/><label for="M4"></label></td>
+                    <td><input type='checkbox' name='M5' value='1' id="M5"/><label for="M5"></label></td>
+                    <td><input type='checkbox' name='M6' value='1' id="M6"/><label for="M6"></label></td>
+                    <td><input type='checkbox' name='M7' value='1' id="M7"/><label for="M7"></label></td>
+                    <td><input type='checkbox' name='M8' value='1' id="M8"/><label for="M8"></label></td>
+                    <td><input type='checkbox' name='M9' value='1' id="M9"/><label for="M9"></label></td>
+                    <td><input type='checkbox' name='M10' value='1' id="M10"/><label for="M10"></label></td>
+                    <td><input type='checkbox' name='M11' value='1' id="M11"/><label for="M11"></label></td>
+                    <td><input type='checkbox' name='M12' value='1' id="M12"/><label for="M12"></label></td>
+                    <td><input type='checkbox' name='M13' value='1' id="M13"/><label for="M13"></label></td>
+                    <td><input type='checkbox' name='M14' value='1' id="M14"/><label for="M14"></label></td>
+                    <td><input type='checkbox' name='M15' value='1' id="M15"/><label for="M15"></label></td>
+                    <td><input type='checkbox' name='M16' value='1' id="M16"/><label for="M16"></label></td>
+                    <td><input type='checkbox' name='M17' value='1' id="M17"/><label for="M17"></label></td>
+                    <td><input type='checkbox' name='M18' value='1' id="M18"/><label for="M18"></label></td>
+                    <td><input type='checkbox' name='M19' value='1' id="M19"/><label for="M19"></label></td>
+                    <td><input type='checkbox' name='M20' value='1' id="M20"/><label for="M20"></label></td>
+                    <td><input type='checkbox' name='M21' value='1' id="M21"/><label for="M21"></label></td>
+                    <td><input type='checkbox' name='M22' value='1' id="M22"/><label for="M22"></label></td>
+                    <td><input type='checkbox' name='M23' value='1' id="M23"/><label for="M23"></label></td>
+                    <td><input type='checkbox' name='M24' value='1' id="M24"/><label for="M24"></label></td>
+                    <td><input type='checkbox' name='M25' value='1' id="M25"/><label for="M25"></label></td>
+                    <td><input type='checkbox' name='M26' value='1' id="M26"/><label for="M26"></label></td>
+                    <td><input type='checkbox' name='M27' value='1' id="M27"/><label for="M27"></label></td>
+                    <td><input type='checkbox' name='M28' value='1' id="M28"/><label for="M28"></label></td>
+                    <td><input type='checkbox' name='M29' value='1' id="M29"/><label for="M29"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='N1' value='1' id="N1"/><label for="N1"></label></td>
+                    <td><input type='checkbox' name='N2' value='1' id="N2"/><label for="N2"></label></td>
+                    <td><input type='checkbox' name='N3' value='1' id="N3"/><label for="N3"></label></td>
+                    <td><input type='checkbox' name='N4' value='1' id="N4"/><label for="N4"></label></td>
+                    <td><input type='checkbox' name='N5' value='1' id="N5"/><label for="N5"></label></td>
+                    <td><input type='checkbox' name='N6' value='1' id="N6"/><label for="N6"></label></td>
+                    <td><input type='checkbox' name='N7' value='1' id="N7"/><label for="N7"></label></td>
+                    <td><input type='checkbox' name='N8' value='1' id="N8"/><label for="N8"></label></td>
+                    <td><input type='checkbox' name='N9' value='1' id="N9"/><label for="N9"></label></td>
+                    <td><input type='checkbox' name='N10' value='1' id="N10"/><label for="N10"></label></td>
+                    <td><input type='checkbox' name='N11' value='1' id="N11"/><label for="N11"></label></td>
+                    <td><input type='checkbox' name='N12' value='1' id="N12"/><label for="N12"></label></td>
+                    <td><input type='checkbox' name='N13' value='1' id="N13"/><label for="N13"></label></td>
+                    <td><input type='checkbox' name='N14' value='1' id="N14"/><label for="N14"></label></td>
+                    <td><input type='checkbox' name='N15' value='1' id="N15"/><label for="N15"></label></td>
+                    <td><input type='checkbox' name='N16' value='1' id="N16"/><label for="N16"></label></td>
+                    <td><input type='checkbox' name='N17' value='1' id="N17"/><label for="N17"></label></td>
+                    <td><input type='checkbox' name='N18' value='1' id="N18"/><label for="N18"></label></td>
+                    <td><input type='checkbox' name='N19' value='1' id="N19"/><label for="N19"></label></td>
+                    <td><input type='checkbox' name='N20' value='1' id="N20"/><label for="N20"></label></td>
+                    <td><input type='checkbox' name='N21' value='1' id="N21"/><label for="N21"></label></td>
+                    <td><input type='checkbox' name='N22' value='1' id="N22"/><label for="N22"></label></td>
+                    <td><input type='checkbox' name='N23' value='1' id="N23"/><label for="N23"></label></td>
+                    <td><input type='checkbox' name='N24' value='1' id="N24"/><label for="N24"></label></td>
+                    <td><input type='checkbox' name='N25' value='1' id="N25"/><label for="N25"></label></td>
+                    <td><input type='checkbox' name='N26' value='1' id="N26"/><label for="N26"></label></td>
+                    <td><input type='checkbox' name='N27' value='1' id="N27"/><label for="N27"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='O1' value='1' id="O1"/><label for="O1"></label></td>
+                    <td><input type='checkbox' name='O2' value='1' id="O2"/><label for="O2"></label></td>
+                    <td><input type='checkbox' name='O3' value='1' id="O3"/><label for="O3"></label></td>
+                    <td><input type='checkbox' name='O4' value='1' id="O4"/><label for="O4"></label></td>
+                    <td><input type='checkbox' name='O5' value='1' id="O5"/><label for="O5"></label></td>
+                    <td><input type='checkbox' name='O6' value='1' id="O6"/><label for="O6"></label></td>
+                    <td><input type='checkbox' name='O7' value='1' id="O7"/><label for="O7"></label></td>
+                    <td><input type='checkbox' name='O8' value='1' id="O8"/><label for="O8"></label></td>
+                    <td><input type='checkbox' name='O9' value='1' id="O9"/><label for="O9"></label></td>
+                    <td><input type='checkbox' name='O10' value='1' id="O10"/><label for="O10"></label></td>
+                    <td><input type='checkbox' name='O11' value='1' id="O11"/><label for="O11"></label></td>
+                    <td><input type='checkbox' name='O12' value='1' id="O12"/><label for="O12"></label></td>
+                    <td><input type='checkbox' name='O13' value='1' id="O13"/><label for="O13"></label></td>
+                    <td><input type='checkbox' name='O14' value='1' id="O14"/><label for="O14"></label></td>
+                    <td><input type='checkbox' name='O15' value='1' id="O15"/><label for="O15"></label></td>
+                    <td><input type='checkbox' name='O16' value='1' id="O16"/><label for="O16"></label></td>
+                    <td><input type='checkbox' name='O17' value='1' id="O17"/><label for="O17"></label></td>
+                    <td><input type='checkbox' name='O18' value='1' id="O18"/><label for="O18"></label></td>
+                    <td><input type='checkbox' name='O19' value='1' id="O19"/><label for="O19"></label></td>
+                    <td><input type='checkbox' name='O20' value='1' id="O20"/><label for="O20"></label></td>
+                    <td><input type='checkbox' name='O21' value='1' id="O21"/><label for="O21"></label></td>
+                    <td><input type='checkbox' name='O22' value='1' id="O22"/><label for="O22"></label></td>
+                    <td><input type='checkbox' name='O23' value='1' id="O23"/><label for="O23"></label></td>
+                    <td><input type='checkbox' name='O24' value='1' id="O24"/><label for="O24"></label></td>
+                    <td><input type='checkbox' name='O25' value='1' id="O25"/><label for="O25"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='P1' value='1' id="P1"/><label for="P1"></label></td>
+                    <td><input type='checkbox' name='P2' value='1' id="P2"/><label for="P2"></label></td>
+                    <td><input type='checkbox' name='P3' value='1' id="P3"/><label for="P3"></label></td>
+                    <td><input type='checkbox' name='P4' value='1' id="P4"/><label for="P4"></label></td>
+                    <td><input type='checkbox' name='P5' value='1' id="P5"/><label for="P5"></label></td>
+                    <td><input type='checkbox' name='P6' value='1' id="P6"/><label for="P6"></label></td>
+                    <td><input type='checkbox' name='P7' value='1' id="P7"/><label for="P7"></label></td>
+                    <td><input type='checkbox' name='P8' value='1' id="P8"/><label for="P8"></label></td>
+                    <td><input type='checkbox' name='P9' value='1' id="P9"/><label for="P9"></label></td>
+                    <td><input type='checkbox' name='P10' value='1' id="P10"/><label for="P10"></label></td>
+                    <td><input type='checkbox' name='P11' value='1' id="P11"/><label for="P11"></label></td>
+                    <td><input type='checkbox' name='P12' value='1' id="P12"/><label for="P12"></label></td>
+                    <td><input type='checkbox' name='P13' value='1' id="P13"/><label for="P13"></label></td>
+                    <td><input type='checkbox' name='P14' value='1' id="P14"/><label for="P14"></label></td>
+                    <td><input type='checkbox' name='P15' value='1' id="P15"/><label for="P15"></label></td>
+                    <td><input type='checkbox' name='P16' value='1' id="P16"/><label for="P16"></label></td>
+                    <td><input type='checkbox' name='P17' value='1' id="P17"/><label for="P17"></label></td>
+                    <td><input type='checkbox' name='P18' value='1' id="P18"/><label for="P18"></label></td>
+                    <td><input type='checkbox' name='P19' value='1' id="P19"/><label for="P19"></label></td>
+                    <td><input type='checkbox' name='P20' value='1' id="P20"/><label for="P20"></label></td>
+                    <td><input type='checkbox' name='P21' value='1' id="P21"/><label for="P21"></label></td>
+                    <td><input type='checkbox' name='P22' value='1' id="P22"/><label for="P22"></label></td>
+                    <td><input type='checkbox' name='P23' value='1' id="P23"/><label for="P23"></label></td>
+                    <td><input type='checkbox' name='P24' value='1' id="P24"/><label for="P24"></label></td>
+                    <td><input type='checkbox' name='P25' value='1' id="P25"/><label for="P25"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='R1' value='1' id="R1"/><label for="R1"></label></td>
+                    <td><input type='checkbox' name='R2' value='1' id="R2"/><label for="R2"></label></td>
+                    <td><input type='checkbox' name='R3' value='1' id="R3"/><label for="R3"></label></td>
+                    <td><input type='checkbox' name='R4' value='1' id="R4"/><label for="R4"></label></td>
+                    <td><input type='checkbox' name='R5' value='1' id="R5"/><label for="R5"></label></td>
+                    <td><input type='checkbox' name='R6' value='1' id="R6"/><label for="R6"></label></td>
+                    <td><input type='checkbox' name='R7' value='1' id="R7"/><label for="R7"></label></td>
+                    <td><input type='checkbox' name='R8' value='1' id="R8"/><label for="R8"></label></td>
+                    <td><input type='checkbox' name='R9' value='1' id="R9"/><label for="R9"></label></td>
+                    <td><input type='checkbox' name='R10' value='1' id="R10"/><label for="R10"></label></td>
+                    <td><input type='checkbox' name='R11' value='1' id="R11"/><label for="R11"></label></td>
+                    <td><input type='checkbox' name='R12' value='1' id="R12"/><label for="R12"></label></td>
+                    <td><input type='checkbox' name='R13' value='1' id="R13"/><label for="R13"></label></td>
+                    <td><input type='checkbox' name='R14' value='1' id="R14"/><label for="R14"></label></td>
+                    <td><input type='checkbox' name='R15' value='1' id="R15"/><label for="R15"></label></td>
+                    <td><input type='checkbox' name='R16' value='1' id="R16"/><label for="R16"></label></td>
+                    <td><input type='checkbox' name='R17' value='1' id="R17"/><label for="R17"></label></td>
+                    <td><input type='checkbox' name='R18' value='1' id="R18"/><label for="R18"></label></td>
+                    <td><input type='checkbox' name='R19' value='1' id="R19"/><label for="R19"></label></td>
+                    <td><input type='checkbox' name='R20' value='1' id="R20"/><label for="R20"></label></td>
+                    <td><input type='checkbox' name='R21' value='1' id="R21"/><label for="R21"></label></td>
+                    <td><input type='checkbox' name='R22' value='1' id="R22"/><label for="R22"></label></td>
+                    <td><input type='checkbox' name='R23' value='1' id="R23"/><label for="R23"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='S1' value='1' id="S1"/><label for="S1"></label></td>
+                    <td><input type='checkbox' name='S2' value='1' id="S2"/><label for="S2"></label></td>
+                    <td><input type='checkbox' name='S3' value='1' id="S3"/><label for="S3"></label></td>
+                    <td><input type='checkbox' name='S4' value='1' id="S4"/><label for="S4"></label></td>
+                    <td><input type='checkbox' name='S5' value='1' id="S5"/><label for="S5"></label></td>
+                    <td><input type='checkbox' name='S6' value='1' id="S6"/><label for="S6"></label></td>
+                    <td><input type='checkbox' name='S7' value='1' id="S7"/><label for="S7"></label></td>
+                    <td><input type='checkbox' name='S8' value='1' id="S8"/><label for="S8"></label></td>
+                    <td><input type='checkbox' name='S9' value='1' id="S9"/><label for="S9"></label></td>
+                    <td><input type='checkbox' name='S10' value='1' id="S10"/><label for="S10"></label></td>
+                    <td><input type='checkbox' name='S11' value='1' id="S11"/><label for="S11"></label></td>
+                    <td><input type='checkbox' name='S12' value='1' id="S12"/><label for="S12"></label></td>
+                    <td><input type='checkbox' name='S13' value='1' id="S13"/><label for="S13"></label></td>
+                    <td><input type='checkbox' name='S14' value='1' id="S14"/><label for="S14"></label></td>
+                    <td><input type='checkbox' name='S15' value='1' id="S15"/><label for="S15"></label></td>
+                    <td><input type='checkbox' name='S16' value='1' id="S16"/><label for="S16"></label></td>
+                    <td><input type='checkbox' name='S17' value='1' id="S17"/><label for="S17"></label></td>
+                    <td><input type='checkbox' name='S18' value='1' id="S18"/><label for="S18"></label></td>
+                    <td><input type='checkbox' name='S19' value='1' id="S19"/><label for="S19"></label></td>
+                    <td><input type='checkbox' name='S20' value='1' id="S20"/><label for="S20"></label></td>
+                    <td><input type='checkbox' name='S21' value='1' id="S21"/><label for="S21"></label></td>
+                    <td><input type='checkbox' name='S22' value='1' id="S22"/><label for="S22"></label></td>
+                    <td><input type='checkbox' name='S23' value='1' id="S23"/><label for="S23"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='T1' value='1' id="T1"/><label for="T1"></label></td>
+                    <td><input type='checkbox' name='T2' value='1' id="T2"/><label for="T2"></label></td>
+                    <td><input type='checkbox' name='T3' value='1' id="T3"/><label for="T3"></label></td>
+                    <td><input type='checkbox' name='T4' value='1' id="T4"/><label for="T4"></label></td>
+                    <td><input type='checkbox' name='T5' value='1' id="T5"/><label for="T5"></label></td>
+                    <td><input type='checkbox' name='T6' value='1' id="T6"/><label for="T6"></label></td>
+                    <td><input type='checkbox' name='T7' value='1' id="T7"/><label for="T7"></label></td>
+                    <td><input type='checkbox' name='T8' value='1' id="T8"/><label for="T8"></label></td>
+                    <td><input type='checkbox' name='T9' value='1' id="T9"/><label for="T9"></label></td>
+                    <td><input type='checkbox' name='T10' value='1' id="T10"/><label for="T10"></label></td>
+                    <td><input type='checkbox' name='T11' value='1' id="T11"/><label for="T11"></label></td>
+                    <td><input type='checkbox' name='T12' value='1' id="T12"/><label for="T12"></label></td>
+                    <td><input type='checkbox' name='T13' value='1' id="T13"/><label for="T13"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><input type='checkbox' name='U1' value='1' id="U1"/><label for="U1"></label></td>
+                    <td><input type='checkbox' name='U2' value='1' id="U2"/><label for="U2"></label></td>
+                    <td><input type='checkbox' name='U3' value='1' id="U3"/><label for="U3"></label></td>
+                    <td><input type='checkbox' name='U4' value='1' id="U4"/><label for="U4"></label></td>
+                    <td><input type='checkbox' name='U5' value='1' id="U5"/><label for="U5"></label></td>
+                    <td><input type='checkbox' name='U6' value='1' id="U6"/><label for="U6"></label></td>
+                    <td><input type='checkbox' name='U7' value='1' id="U7"/><label for="U7"></label></td>
+                    <td><input type='checkbox' name='U8' value='1' id="U8"/><label for="U8"></label></td>
+                    <td><input type='checkbox' name='U9' value='1' id="U9"/><label for="U9"></label></td>
+                    <td><input type='checkbox' name='U10' value='1' id="U10"/><label for="U10"></label></td>
+                    <td><input type='checkbox' name='U11' value='1' id="U11"/><label for="U11"></label></td>
+                    <td><input type='checkbox' name='U12' value='1' id="U12"/><label for="U12"></label></td>
+                    <td><input type='checkbox' name='U13' value='1' id="U13"/><label for="U13"></label></td>
+                    <td><input type='checkbox' name='U14' value='1' id="U14"/><label for="U14"></label></td>
+                    <td><input type='checkbox' name='U15' value='1' id="U15"/><label for="U15"></label></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                </tbody>
+            </table>
+            <input type="submit" value="gönder">
+        </form>
+    </div>
+
+{% endblock %}
